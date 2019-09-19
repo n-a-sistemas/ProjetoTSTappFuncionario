@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "697955787228",
+    "firebase_url": "https://tst-funcionario.firebaseio.com",
+    "project_id": "tst-funcionario",
+    "storage_bucket": "tst-funcionario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697955787228:android:e433b691ffdc4737c56f19",
+        "android_client_info": {
+          "package_name": "com.example.tstfuncionario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697955787228-ospv2du2ck7922se33tulb5iso74bv53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tstfuncionario",
+            "certificate_hash": "1301bdbac0da152dab495d150a8f76eedaa63742"
+          }
+        },
+        {
+          "client_id": "697955787228-nstcqfltt0f40gapnq5rqre6n0q41sq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcwQvwkDEUhkDfO7imKJzAycyxQFnvAS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697955787228-nstcqfltt0f40gapnq5rqre6n0q41sq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
