@@ -1,9 +1,13 @@
 package com.example.tstfuncionario;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.content.Intent;
+
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -16,11 +20,17 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
+    private EditText editTextUsuario;
+    private EditText editTextSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        editTextUsuario = findViewById(R.id.edit_text_usuario);
+        editTextSenha = findViewById(R.id.edit_text_senha);
+
+        conectaBanco();
     }
 
     private void conectaBanco(){
@@ -29,13 +39,19 @@ public class MainActivity extends AppCompatActivity {
         databaseReference = firebaseDatabase.getReference();
     }
 
-    private void salvarDado(View v){
+    public void salvarDado(View view){
         String uuid = UUID.randomUUID().toString();
         databaseReference
                 .child("projetotst")
                 .child(uuid)
                 .child("usuario")
-                .child()
+                .setValue(editTextUsuario.getText().toString());
+
+        databaseReference
+                .child("projetotst")
+                .child(uuid)
+                .child("senha")
+                .setValue(editTextSenha.getText().toString());
 
     }
 }
